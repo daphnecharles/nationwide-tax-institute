@@ -1,6 +1,13 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import SocialBar from './SocialBar'
+import LogoBar from './LogoBar'
+import NavBar from './NavBar'
+import MainContent from './MainContent'
+import Footer from './Footer'
+/** @jsx jsx */
+import { jsx, css } from '@emotion/react'
 
 type Props = {
   children: ReactNode
@@ -17,54 +24,22 @@ const Layout = ({
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@thorwebdev" />
-      <meta name="twitter:title" content="TypeScript Next.js Stripe Example" />
+      <meta name="twitter:site" content="@nationwidetaxinstitute" />
+      <meta name="twitter:title" content="Nationwide Tax Institute - Tax Training School" />
       <meta
         name="twitter:description"
-        content="Full-stack TypeScript example using Next.js, react-stripe-js, and stripe-node."
-      />
-      <meta
-        name="twitter:image"
-        content="https://nextjs-typescript-react-stripe-js.now.sh/social_card.png"
+        content="Nationwide Tax Institute - Tax Training School"
       />
     </Head>
     <div className="container">
       <header>
-        <div className="header-content">
-          <Link href="/">
-            <a className="logo">
-              <img src="/logo.png" />
-            </a>
-          </Link>
-          <h1>
-            <span className="light">Stripe Sample</span>
-            <br />
-            Next.js, TypeScript, and Stripe 🔒💸
-          </h1>
-        </div>
+        <SocialBar/>
+        <LogoBar/>
       </header>
+      <NavBar />
+      <MainContent/>
+      <Footer/>
       {children}
-    </div>
-    <div className="banner">
-      <span>
-        This is a{' '}
-        <a
-          href="https://github.com/stripe-samples"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Stripe Sample
-        </a>
-        .{' View code on '}
-        <a
-          href="https://github.com/vercel/next.js/tree/canary/examples/with-stripe-typescript"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        .
-      </span>
     </div>
   </>
 )

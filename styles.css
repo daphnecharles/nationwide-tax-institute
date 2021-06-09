@@ -1,4 +1,4 @@
-/* Variables */
+/* Variables
 :root {
   --body-color: #fcfdfe;
   --checkout-color: #8f6ed5;
@@ -202,7 +202,7 @@ button:disabled {
 }
 
 /* Products */
-.products {
+/*.products {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
@@ -214,7 +214,7 @@ button:disabled {
 }
 
 /* Test card number */
-.test-card-notice {
+/*.test-card-notice {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -234,7 +234,7 @@ button:disabled {
 }
 
 /* Code block */
-code,
+/*code,
 pre {
   font-family: 'SF Mono', 'IBM Plex Mono', 'Menlo', monospace;
   font-size: 12px;
@@ -323,4 +323,4 @@ pre {
     box-shadow: none;
     bottom: 0;
   }
-}
+} */

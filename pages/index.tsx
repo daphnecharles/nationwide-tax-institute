@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 const IndexPage: NextPage = () => {
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <ul className="card-list">
+      {/* <ul className="card-list">
         <li>
           <Link href="/donate-with-checkout">
             <a className="card checkout-style-background">
@@ -30,7 +30,7 @@ const IndexPage: NextPage = () => {
             </a>
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </Layout>
   )
 }

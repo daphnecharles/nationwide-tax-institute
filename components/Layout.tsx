@@ -16,11 +16,12 @@ type Props = {
 
 const Layout = ({
   children,
-  title = 'TypeScript Next.js Stripe Example',
+  title = 'Nationwide Tax Institute - Tax Training School',
 }: Props) => (
   <>
     <Head>
       <title>{title}</title>
+      <link rel="shortcut icon" href="/favicon.png" />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="twitter:card" content="summary_large_image" />
